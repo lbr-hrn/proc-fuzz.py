@@ -2,7 +2,7 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-url = "http://10.10.11.125"
+url = "http://$ip"
 
 def b(pid):
     r = requests.get(f"{url}/proc/{pid}/cmdline")
